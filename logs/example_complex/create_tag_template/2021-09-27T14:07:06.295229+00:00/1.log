@@ -1,0 +1,27 @@
+[2021-09-27 14:07:21,172] {taskinstance.py:903} INFO - Dependencies all met for <TaskInstance: example_complex.create_tag_template 2021-09-27T14:07:06.295229+00:00 [queued]>
+[2021-09-27 14:07:21,198] {taskinstance.py:903} INFO - Dependencies all met for <TaskInstance: example_complex.create_tag_template 2021-09-27T14:07:06.295229+00:00 [queued]>
+[2021-09-27 14:07:21,199] {taskinstance.py:1095} INFO - 
+--------------------------------------------------------------------------------
+[2021-09-27 14:07:21,201] {taskinstance.py:1096} INFO - Starting attempt 1 of 1
+[2021-09-27 14:07:21,202] {taskinstance.py:1097} INFO - 
+--------------------------------------------------------------------------------
+[2021-09-27 14:07:21,224] {taskinstance.py:1115} INFO - Executing <Task(BashOperator): create_tag_template> on 2021-09-27T14:07:06.295229+00:00
+[2021-09-27 14:07:21,228] {standard_task_runner.py:52} INFO - Started process 2176 to run task
+[2021-09-27 14:07:21,233] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'example_complex', 'create_tag_template', '2021-09-27T14:07:06.295229+00:00', '--job-id', '7', '--pool', 'default_pool', '--raw', '--subdir', '/home/***/.local/lib/python3.6/site-packages/***/example_dags/example_complex.py', '--cfg-path', '/tmp/tmp7smanv4h', '--error-file', '/tmp/tmpshdqd7au']
+[2021-09-27 14:07:21,236] {standard_task_runner.py:77} INFO - Job 7: Subtask create_tag_template
+[2021-09-27 14:07:21,297] {logging_mixin.py:109} INFO - Running <TaskInstance: example_complex.create_tag_template 2021-09-27T14:07:06.295229+00:00 [running]> on host 6c9f6f41e1ed
+[2021-09-27 14:07:21,361] {taskinstance.py:1254} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=example_complex
+AIRFLOW_CTX_TASK_ID=create_tag_template
+AIRFLOW_CTX_EXECUTION_DATE=2021-09-27T14:07:06.295229+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2021-09-27T14:07:06.295229+00:00
+[2021-09-27 14:07:21,366] {subprocess.py:52} INFO - Tmp dir root location: 
+ /tmp
+[2021-09-27 14:07:21,368] {subprocess.py:63} INFO - Running command: ['bash', '-c', 'echo create_tag_template']
+[2021-09-27 14:07:21,377] {subprocess.py:74} INFO - Output:
+[2021-09-27 14:07:21,378] {subprocess.py:78} INFO - create_tag_template
+[2021-09-27 14:07:21,379] {subprocess.py:82} INFO - Command exited with return code 0
+[2021-09-27 14:07:21,415] {taskinstance.py:1219} INFO - Marking task as SUCCESS. dag_id=example_complex, task_id=create_tag_template, execution_date=20210927T140706, start_date=20210927T140721, end_date=20210927T140721
+[2021-09-27 14:07:21,452] {local_task_job.py:151} INFO - Task exited with return code 0
+[2021-09-27 14:07:21,497] {local_task_job.py:261} INFO - 5 downstream tasks scheduled from follow-on schedule check
